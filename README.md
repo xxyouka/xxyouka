@@ -61,4 +61,4 @@
 
 ---
 
-<sub>ISSUE 01 · 2026 · GUANGZHOU　—　[作品集](https://xxyouka.github.io/portfolio/)　·　[GitHub](https://github.com/xxyouka)　·　封面为两版手绘 SVG，排版用 Georgia 与宋体。</sub>
+<sub>ISSUE 01 · 2026 · GUANGZHOU　—　[作品集](https://xxyouka.github.io/portfolio/)　·　[GitHub](https://github.com/xxyouka)　·　封面为两版自绘 SVG，排版用 Georgia 与宋体。</sub>
