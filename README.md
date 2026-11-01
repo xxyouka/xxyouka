@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg">
-  <img src="assets/cover-light.svg" alt="xx · XXYOUKA — Issue 01，AI、小程序与校园猫" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg?v=2">
+  <img src="assets/cover-light.svg?v=2" alt="xx · XXYOUKA — Issue 01，AI、小程序与校园猫" width="100%">
 </picture>
 
 <p align="right"><sub><a href="https://xxyouka.github.io/portfolio/">作品集 PORTFOLIO ↗</a></sub></p>
@@ -15,7 +15,7 @@
 
 *Based in Guangzhou. I build mini programs, vision models and testing tools — mostly around campus cats.*
 
-> **NOW**　广生态猫猫 3.11.x　·　pet-id Top-1 84.4%　·　2026 全国大学生软件测试大赛 · 开发者测试
+> **NOW**　校园猫猫 3.11.x　·　pet-id Top-1 84.4%　·　2026 全国大学生软件测试大赛 · 开发者测试
 
 <br>
 
@@ -25,7 +25,7 @@
 
 | № | 项目 PROJECT | 年份 |
 | ---: | :--- | ---: |
-| 01 | **广生态猫猫** <sub>CAMPUS CATS</sub><br>校园流浪猫的档案、偶遇打卡与救助进展平台。微信小程序原生 + CloudBase，75 个云函数、4,145 条自动化用例。 | 2025– |
+| 01 | **校园猫猫** <sub>CAMPUS CATS</sub><br>校园流浪猫的档案、偶遇打卡与救助进展平台。微信小程序原生 + CloudBase，75 个云函数、4,145 条自动化用例。 | 2025– |
 | 02 | **pet-id** <sub>PET RE-ID</sub><br>通用宠物个体识别：检测 + 特征 + 底库检索。112 只、1,236 张底库，留出集 Top-1 84.4%，单张 1–2 秒。 | 2026 |
 | 03 | **果智瞳** <sub>GRAPE VISION</sub><br>用视觉模型看葡萄的病虫害和成熟度，把经验判断变成可复用的图像证据。挑战杯省铜。 | 2026 |
 | 04 | **software-test-helper** <sub>TESTING TOOLKIT</sub><br>软件测试竞赛辅助工具：用例模板、Bug 清单、JUnit 片段与报告导出。 | 2025– |
