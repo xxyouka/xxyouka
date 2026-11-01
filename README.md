@@ -32,7 +32,7 @@
 | 05 | **BitClock** <sub>PIXEL TIMER</sub><br>像素风电脑使用时长追踪器，把时间变成一块会生长的像素屏。Svelte 构建。 | 2026 |
 | 06 | **danmu-player** <sub>DANMAKU PLAYER</sub><br>一款集成 B 站弹幕的音乐播放器。TypeScript 构建。 | 2026 |
 
-<sub>还有一些没公开的实验：天机阁 · Reticence · 双人食刻 · 《一只猫的第九条命》。</sub>
+<sub>还有一些没开源的实验：天机阁 · Reticence · 双人食刻 · 《一只猫的第九条命》。</sub>
 
 <br>
 
