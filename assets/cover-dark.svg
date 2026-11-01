@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">官潇 · GUAN XIAO — 物联网、AI 与校园猫</title>
+  <desc id="desc">杂志创刊号风格的暗色封面：墨黑纸面、米白衬线大字，铜红点缀，右侧为作品目录。</desc>
+
+  <rect width="1280" height="420" fill="#12110F"/>
+  <rect x="24" y="24" width="1232" height="392" fill="none" stroke="#F2EEE4" stroke-opacity="0.14"/>
+  <circle cx="1198" cy="80" r="260" fill="none" stroke="#D96A45" stroke-opacity="0.14"/>
+
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#8B8478">
+    <text x="800" y="64" font-size="11" letter-spacing="2.6">GUANGZHOU · 23.1°N</text>
+    <text x="1224" y="64" font-size="11" letter-spacing="2.6" text-anchor="end">EST. 2023</text>
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif">
+    <text x="56" y="64" font-size="11" letter-spacing="2.8" fill="#D96A45">ISSUE 01 — PORTFOLIO / 2026</text>
+  </g>
+  <line x1="56" y1="86" x2="1224" y2="86" stroke="#F2EEE4" stroke-opacity="0.16"/>
+
+  <rect x="40" y="128" width="4" height="200" fill="#D96A45"/>
+
+  <text x="64" y="258" font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="148" fill="#F2EEE4">官潇</text>
+  <text x="68" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="50" letter-spacing="9" fill="#F2EEE4">GUAN XIAO</text>
+
+  <line x1="772" y1="108" x2="772" y2="344" stroke="#F2EEE4" stroke-opacity="0.14"/>
+
+  <rect x="800" y="132" width="6" height="6" fill="#D96A45"/>
+  <text x="818" y="141" font-family="Georgia, 'Times New Roman', serif" font-size="10" letter-spacing="2.8" fill="#8B8478">CONTENTS</text>
+
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="1.6" fill="#8B8478" text-anchor="end">
+    <text x="1224" y="185">CAMPUS CATS</text>
+    <text x="1224" y="221">PET RE-IDENTIFICATION</text>
+    <text x="1224" y="257">GRAPE VISION</text>
+    <text x="1224" y="293">TESTING TOOLKIT</text>
+    <text x="1224" y="329">PIXEL TIMER</text>
+  </g>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="10" letter-spacing="1" fill="#D96A45">
+    <text x="800" y="185">01</text>
+    <text x="800" y="221">02</text>
+    <text x="800" y="257">03</text>
+    <text x="800" y="293">04</text>
+    <text x="800" y="329">05</text>
+  </g>
+  <g font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="15" fill="#F2EEE4">
+    <text x="832" y="185">广生态猫猫</text>
+    <text x="832" y="221">pet-id</text>
+    <text x="832" y="257">果智瞳</text>
+    <text x="832" y="293">software-test-helper</text>
+    <text x="832" y="329">BitClock</text>
+  </g>
+  <g stroke="#F2EEE4" stroke-opacity="0.10">
+    <line x1="800" y1="200" x2="1224" y2="200"/>
+    <line x1="800" y1="236" x2="1224" y2="236"/>
+    <line x1="800" y1="272" x2="1224" y2="272"/>
+    <line x1="800" y1="308" x2="1224" y2="308"/>
+  </g>
+
+  <line x1="56" y1="352" x2="1224" y2="352" stroke="#F2EEE4" stroke-opacity="0.16"/>
+
+  <text x="56" y="384" font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="18" fill="#F2EEE4">用代码照顾校园里的猫</text>
+  <text x="56" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.8" fill="#8B8478">IOT · AI · CAMPUS CATS</text>
+  <text x="1224" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.2" fill="#8B8478" text-anchor="end">GITHUB.COM/XXYOUKA</text>
+</svg>
