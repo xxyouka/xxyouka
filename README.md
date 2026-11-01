@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg">
-  <img src="assets/cover-light.svg" alt="官潇 · GUAN XIAO — Issue 01，物联网、AI 与校园猫" width="100%">
+  <img src="assets/cover-light.svg" alt="xx · XXYOUKA — Issue 01，AI、小程序与校园猫" width="100%">
 </picture>
 
 <p align="right"><sub><a href="https://xxyouka.github.io/portfolio/">作品集 PORTFOLIO ↗</a></sub></p>
@@ -11,9 +11,9 @@
 
 ## 用代码照顾校园里的猫。
 
-广东生态工程职业学院 · 物联网应用技术 2025 级。做小程序、做视觉模型、做测试工具，也做一点猫的事。
+在广州读书。做小程序、做视觉模型、做测试工具，也做一点猫的事。
 
-*IoT student in Guangzhou. I build small products end to end — mini programs, vision models, testing tools — mostly around campus cats.*
+*Based in Guangzhou. I build mini programs, vision models and testing tools — mostly around campus cats.*
 
 > **NOW**　广生态猫猫 3.11.x　·　pet-id Top-1 84.4%　·　2026 全国大学生软件测试大赛 · 开发者测试
 

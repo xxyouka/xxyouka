@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
-  <title id="title">官潇 · GUAN XIAO — 物联网、AI 与校园猫</title>
+  <title id="title">xx · XXYOUKA — AI、小程序与校园猫</title>
   <desc id="desc">杂志创刊号风格的暗色封面：墨黑纸面、米白衬线大字，铜红点缀，右侧为作品目录。</desc>
 
   <rect width="1280" height="420" fill="#12110F"/>
@@ -18,8 +18,8 @@
 
   <rect x="40" y="128" width="4" height="200" fill="#D96A45"/>
 
-  <text x="64" y="258" font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="148" fill="#F2EEE4">官潇</text>
-  <text x="68" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="50" letter-spacing="9" fill="#F2EEE4">GUAN XIAO</text>
+  <text x="64" y="272" font-family="Georgia, 'Times New Roman', serif" font-size="240" fill="#F2EEE4">xx</text>
+  <text x="68" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="11" fill="#F2EEE4">XXYOUKA</text>
 
   <line x1="772" y1="108" x2="772" y2="344" stroke="#F2EEE4" stroke-opacity="0.14"/>
 
@@ -57,6 +57,6 @@
   <line x1="56" y1="352" x2="1224" y2="352" stroke="#F2EEE4" stroke-opacity="0.16"/>
 
   <text x="56" y="384" font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="18" fill="#F2EEE4">用代码照顾校园里的猫</text>
-  <text x="56" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.8" fill="#8B8478">IOT · AI · CAMPUS CATS</text>
+  <text x="56" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.8" fill="#8B8478">AI · MINI PROGRAMS · CAMPUS CATS</text>
   <text x="1224" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.2" fill="#8B8478" text-anchor="end">GITHUB.COM/XXYOUKA</text>
 </svg>
