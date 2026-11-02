@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg?v=2">
-  <img src="assets/cover-light.svg?v=2" alt="xx · XXYOUKA — AI、小程序与校园猫" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg?v=3">
+  <img src="assets/cover-light.svg?v=3" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
 <p align="right"><sub><a href="https://xxyouka.github.io/">作品集 PORTFOLIO ↗</a>　·　<a href="mailto:1420272691@qq.com">联系 CONTACT ↗</a></sub></p>

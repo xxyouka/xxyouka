@@ -1,62 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
-  <title id="title">xx · XXYOUKA — AI、小程序与校园猫</title>
-  <desc id="desc">杂志创刊号风格的封面：米白纸面、墨黑衬线大字，铜红点缀，右侧为作品目录。</desc>
-
-  <rect width="1280" height="420" fill="#F2EEE4"/>
-  <rect x="24" y="24" width="1232" height="392" fill="none" stroke="#14120E" stroke-opacity="0.12"/>
-  <circle cx="1198" cy="80" r="260" fill="none" stroke="#B34A28" stroke-opacity="0.10"/>
-
-  <g font-family="Georgia, 'Times New Roman', serif" fill="#7A7266">
-    <text x="800" y="64" font-size="11" letter-spacing="2.6">GUANGZHOU · 23.1°N</text>
-    <text x="1224" y="64" font-size="11" letter-spacing="2.6" text-anchor="end">EST. 2023</text>
-  </g>
-
-  <g font-family="Georgia, 'Times New Roman', serif">
-    <text x="56" y="64" font-size="11" letter-spacing="2.8" fill="#B34A28">ISSUE 01 — PORTFOLIO / 2026</text>
-  </g>
-  <line x1="56" y1="86" x2="1224" y2="86" stroke="#14120E" stroke-opacity="0.14"/>
-
-  <rect x="40" y="128" width="4" height="200" fill="#B34A28"/>
-
-  <text x="64" y="272" font-family="Georgia, 'Times New Roman', serif" font-size="240" fill="#14120E">xx</text>
-  <text x="68" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="44" letter-spacing="11" fill="#14120E">XXYOUKA</text>
-
-  <line x1="772" y1="108" x2="772" y2="344" stroke="#14120E" stroke-opacity="0.12"/>
-
-  <rect x="800" y="132" width="6" height="6" fill="#B34A28"/>
-  <text x="818" y="141" font-family="Georgia, 'Times New Roman', serif" font-size="10" letter-spacing="2.8" fill="#7A7266">CONTENTS</text>
-
-  <g font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="1.6" fill="#7A7266" text-anchor="end">
-    <text x="1224" y="185">CAMPUS CATS</text>
-    <text x="1224" y="221">PET RE-IDENTIFICATION</text>
-    <text x="1224" y="257">GRAPE VISION</text>
-    <text x="1224" y="293">TESTING TOOLKIT</text>
-    <text x="1224" y="329">PIXEL TIMER</text>
-  </g>
-  <g font-family="Georgia, 'Times New Roman', serif" font-size="10" letter-spacing="1" fill="#B34A28">
-    <text x="800" y="185">01</text>
-    <text x="800" y="221">02</text>
-    <text x="800" y="257">03</text>
-    <text x="800" y="293">04</text>
-    <text x="800" y="329">05</text>
-  </g>
-  <g font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="15" fill="#14120E">
-    <text x="832" y="185">校园猫猫</text>
-    <text x="832" y="221">pet-id</text>
-    <text x="832" y="257">果智瞳</text>
-    <text x="832" y="293">software-test-helper</text>
-    <text x="832" y="329">BitClock</text>
-  </g>
-  <g stroke="#14120E" stroke-opacity="0.08">
-    <line x1="800" y1="200" x2="1224" y2="200"/>
-    <line x1="800" y1="236" x2="1224" y2="236"/>
-    <line x1="800" y1="272" x2="1224" y2="272"/>
-    <line x1="800" y1="308" x2="1224" y2="308"/>
-  </g>
-
-  <line x1="56" y1="352" x2="1224" y2="352" stroke="#14120E" stroke-opacity="0.14"/>
-
-  <text x="56" y="384" font-family="'Songti SC', 'STSong', 'Noto Serif SC', SimSun, serif" font-size="18" fill="#14120E">用代码照顾校园里的猫</text>
-  <text x="56" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.8" fill="#7A7266">AI · MINI PROGRAMS · CAMPUS CATS</text>
-  <text x="1224" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="9" letter-spacing="2.2" fill="#7A7266" text-anchor="end">GITHUB.COM/XXYOUKA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" role="img" aria-labelledby="title desc">
+<title id="title">xx / xxyouka — portfolio</title>
+<desc id="desc">An editorial cover for projects in digital products, AI and interactive experiences.</desc>
+<rect width="1280" height="480" fill="#F4F0E7"/>
+<rect x="24" y="24" width="1232" height="432" fill="none" stroke="#DAD0C1"/>
+<path d="M56 91H1224 M56 392H1224 M770 117V367" stroke="#DAD0C1" fill="none"/>
+<circle cx="1160" cy="70" r="170" fill="none" stroke="#B85738" opacity=".12"/>
+<text x="56" y="67" fill="#B85738" font-family="monospace" font-size="19" letter-spacing="2">ISSUE 01 / 2026</text>
+<text x="1224" y="67" fill="#806F62" font-family="monospace" font-size="19" text-anchor="end">DIGITAL PRODUCTS · AI · STORIES</text>
+<rect x="56" y="134" width="5" height="178" fill="#B85738"/>
+<text x="80" y="265" fill="#221D1A" font-family="Georgia, serif" font-size="160" font-weight="bold" letter-spacing="-10">xx</text>
+<text x="82" y="316" fill="#221D1A" font-family="Georgia, serif" font-size="39" letter-spacing="6">XXYOUKA</text>
+<text x="56" y="351" fill="#806F62" font-family="monospace" font-size="21">FROM IDEA TO SOMETHING REAL.</text>
+<text x="808" y="144" fill="#B85738" font-family="monospace" font-size="19" letter-spacing="2">SELECTED WORKS</text>
+<g fill="#221D1A" font-family="Georgia, serif" font-size="27">
+<text x="808" y="196">01  Campus Cats</text>
+<text x="808" y="241">02  pet-id</text>
+<text x="808" y="286">03  The Ninth Life of a Cat</text>
+<text x="808" y="331">04  A Table for Two</text>
+</g>
+<text x="56" y="432" fill="#806F62" font-family="monospace" font-size="18">BUILD · EXPLORE · CREATE</text>
+<text x="1224" y="432" fill="#806F62" font-family="monospace" font-size="18" text-anchor="end">GITHUB.COM/XXYOUKA</text>
 </svg>
