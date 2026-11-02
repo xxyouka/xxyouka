@@ -10,7 +10,7 @@
 - 案例文案、图片列表、筛选和导航：site.js；案例年份、角色、技术栈与结果：site.js 的 caseMeta
 - 视觉与手机排版：site.css
 - 图片与图标：assets/
-- 分享预览图：assets/og-cover-20261102b.png（1200×630，对应 og:image）
+- 分享预览图：assets/og-cover-20261102c.png（1200×630，对应 og:image）
 - 标题衬线：assets/fonts/noto-serif-sc-display.woff2（Noto Serif SC 子集，SIL OFL 1.1，见 assets/fonts/OFL.txt）
 - ASCII 海洋：ocean.js，基于 stackedlol/ascii-sharks（MIT），有本项目的锦鲤与全页适配修改。
 
@@ -21,13 +21,15 @@
 
 ## 素材说明
 
-首页作品卡使用 ASCII 字符画；项目详情使用实际运行截图。广生态猫猫同时保留品牌分享卡。
+首页作品卡使用 ASCII 字符画；项目详情使用实际运行截图。广生态猫猫同时保留品牌分享卡，卡面已隐去完整校名。公开素材统一遵循 xx / xxyouka 的匿名约定。
 
 ## 验证记录（2026-11-02）
 
 已检查 320、360、390、600、768、900、1024、1280、1440px 九个宽度，均无横向溢出；首屏两张真实项目截图在九个宽度下均正常加载。四张作品卡使用新的 ASCII 构图（故事分支、猫咪档案卡、宠物检索、双人餐桌），在 320–1440px 下均无裁切，也不与卡片说明文字重叠；四个案例的 YEAR / ROLE / STACK 与结果均正常渲染；标题衬线在 320–1440px 正常加载，项目、关于、联系与弹窗标题均无溢出，分享图使用同一套字体；猫猫、pet-id、双人食刻与第九条命案例的过程、取舍与数据证据在桌面和手机端正常渲染；桌面端四张卡的悬停预览与像素切换、移出还原、悬停后点击打开详情均正常，触屏与 reduced-motion 下预览自动禁用。逐个打开四个项目的桌面与手机详情，图片完整加载，手机截图带设备边框且放大按钮在首屏内完整可见。筛选计数、#project 直达、浏览器返回关闭、前后切换、方向键换图、大图查看、手机菜单、复制链接与复制邮箱均正常；无控制台报错或资源 404。
 
 线上部署与案例弹窗验证（2026-11-02）：https://xxyouka.github.io/ 已返回 200，四个案例分别通过 `#project/ninth`、`#project/cat`、`#project/pet`、`#project/meal` 直达验证；桌面 1440px 与手机 390px 下标题、序号、事实、过程、取舍、结果、证据与交付均正常渲染。封面、第二张图库图与放大查看器均从线上 assets 加载；前后切换、图库切换、浏览器返回关闭、筛选计数（02 / 02 / 01 / 04）与无效项目代号拦截均正常，无横向溢出、资源 404 或控制台报错。
+
+公开素材复查（2026-11-02）：页面、元信息、分享图与案例图片均按 xx / xxyouka 的匿名约定检查，不出现真实姓名、学校全名或专业信息。
 
 ## 字体
 
@@ -37,7 +39,7 @@
 
 ## 分享与 SEO
 
-分享预览图使用 assets/og-cover-20261102b.png，canonical、og:url、og:image 与 Twitter Card 均指向 https://xxyouka.github.io/。若站点地址变化，需要同步修改 index.html 头部的绝对地址。
+分享预览图使用 assets/og-cover-20261102c.png，canonical、og:url、og:image 与 Twitter Card 均指向 https://xxyouka.github.io/。若站点地址变化，需要同步修改 index.html 头部的绝对地址。
 
 ## 案例链接
 
