@@ -3,7 +3,9 @@
   <img src="assets/type-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
-<p align="right"><sub><a href="https://xxyouka.github.io/">作品集 PORTFOLIO ↗</a>　·　<a href="mailto:1420272691@qq.com">联系 CONTACT ↗</a></sub></p>
+**导航**　[作品](#一些正在生长的作品)　/　[公开项目](#一些顺手做出来的工具)　/　[关于与工具](#工作台抽屉)
+
+[完整作品集 ↗](https://xxyouka.github.io/)　·　[邮件联系 ↗](mailto:1420272691@qq.com)
 
 ---
 
@@ -14,6 +16,15 @@
 你好，我是 **xx / xxyouka**。我喜欢从生活里的小问题出发，把想法做成可以使用的东西：有时是一个小程序，有时是一套识别系统，偶尔也讲一个关于猫的故事。
 
 *I build mini programs, AI applications and interactive experiences, turning ideas into things people can use.*
+
+<details>
+<summary>第一次来？从这里开始</summary>
+
+- 想看真实产品？看看 [校园猫猫的档案和设计](https://xxyouka.github.io/#project/cat)。
+- 对 AI 感兴趣？看看 [pet-id 如何识别猫咪个体](https://xxyouka.github.io/#project/pet)。
+- 想先体验点什么？打开 [一只猫的第九条命](https://jiutiaoming.pages.dev/)。
+
+</details>
 
 ---
 
@@ -65,7 +76,6 @@
 
 <details>
 <summary>打开看看：工具与经历</summary>
-
 
 - **产品与开发**：微信小程序 · CloudBase · JavaScript / TypeScript · Python
 - **视觉与 AI**：OpenCV · 目标检测 · 特征检索 · 数据评估
