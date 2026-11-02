@@ -3,7 +3,7 @@
   <img src="assets/type-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
-**导航**　[作品](#一些正在生长的作品)　/　[公开项目](#一些顺手做出来的工具)　/　[关于与工具](#工作台抽屉)
+**导航**　[作品](#user-content-一些正在生长的作品)　/　[公开项目](#user-content-一些顺手做出来的工具)　/　[关于与工具](#user-content-工作台抽屉)
 
 [完整作品集 ↗](https://xxyouka.github.io/)　·　[邮件联系 ↗](mailto:1420272691@qq.com)
 
