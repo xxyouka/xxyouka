@@ -1,23 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480" width="1280" height="480" role="img" aria-labelledby="title desc">
-<title id="title">xx / xxyouka — portfolio</title>
-<desc id="desc">An editorial cover for projects in digital products, AI and interactive experiences.</desc>
-<rect width="1280" height="480" fill="#F4F0E7"/>
-<rect x="24" y="24" width="1232" height="432" fill="none" stroke="#DAD0C1"/>
-<path d="M56 91H1224 M56 392H1224 M770 117V367" stroke="#DAD0C1" fill="none"/>
-<circle cx="1160" cy="70" r="170" fill="none" stroke="#B85738" opacity=".12"/>
-<text x="56" y="67" fill="#B85738" font-family="monospace" font-size="19" letter-spacing="2">ISSUE 01 / 2026</text>
-<text x="1224" y="67" fill="#806F62" font-family="monospace" font-size="19" text-anchor="end">DIGITAL PRODUCTS · AI · STORIES</text>
-<rect x="56" y="134" width="5" height="178" fill="#B85738"/>
-<text x="80" y="265" fill="#221D1A" font-family="Georgia, serif" font-size="160" font-weight="bold" letter-spacing="-10">xx</text>
-<text x="82" y="316" fill="#221D1A" font-family="Georgia, serif" font-size="39" letter-spacing="6">XXYOUKA</text>
-<text x="56" y="351" fill="#806F62" font-family="monospace" font-size="21">FROM IDEA TO SOMETHING REAL.</text>
-<text x="808" y="144" fill="#B85738" font-family="monospace" font-size="19" letter-spacing="2">SELECTED WORKS</text>
-<g fill="#221D1A" font-family="Georgia, serif" font-size="27">
-<text x="808" y="196">01  Campus Cats</text>
-<text x="808" y="241">02  pet-id</text>
-<text x="808" y="286">03  The Ninth Life of a Cat</text>
-<text x="808" y="331">04  A Table for Two</text>
-</g>
-<text x="56" y="432" fill="#806F62" font-family="monospace" font-size="18">BUILD · EXPLORE · CREATE</text>
-<text x="1224" y="432" fill="#806F62" font-family="monospace" font-size="18" text-anchor="end">GITHUB.COM/XXYOUKA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="title desc">
+<title id="title">xx / xxyouka</title><desc id="desc">An editorial cover for digital products, AI and interactive stories.</desc>
+<rect width="1200" height="500" fill="#f3efe8"/>
+<rect x="24" y="24" width="1152" height="452" fill="none" stroke="#d5cdd0"/>
+<path d="M60 94H1140 M60 406H1140" fill="none" stroke="#d5cdd0"/>
+<text x="60" y="68" fill="#805782" font-family="Arial,sans-serif" font-size="23" font-weight="bold" letter-spacing="4">XX / 01</text>
+<text x="1140" y="68" fill="#706a72" font-family="Arial,sans-serif" font-size="20" letter-spacing="3" text-anchor="end">SELECTED WORKS · 2026</text>
+<text x="54" y="223" fill="#27232b" font-family="Georgia,serif" font-size="112" letter-spacing="-5">xxyouka<tspan fill="#805782">.</tspan></text>
+<text x="61" y="283" fill="#27232b" font-family="Georgia,serif" font-style="italic" font-size="43">Ideas into things.</text>
+<text x="61" y="351" fill="#706a72" font-family="Arial,sans-serif" font-size="24" letter-spacing="1">PRODUCTS  /  AI  /  STORIES</text>
+<g fill="none" stroke="#d5cdd0"><circle cx="936" cy="251" r="126"/><circle cx="936" cy="251" r="96"/><path d="M777 251H1095 M936 104V398"/></g>
+<circle cx="936" cy="251" r="63" fill="#e7dfe1"/>
+<path d="M895 250 L903 211 L922 225 Q936 219 950 225 L969 211 L977 250 Q976 285 936 294 Q896 285 895 250 Z" fill="none" stroke="#27232b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M914 254q6-7 12 0 M946 254q6-7 12 0 M931 270q5 5 10 0" fill="none" stroke="#805782" stroke-width="3" stroke-linecap="round"/>
+<circle cx="1025" cy="161" r="6" fill="#805782"/><circle cx="847" cy="341" r="4" fill="#805782"/>
+<text x="60" y="447" fill="#706a72" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">BUILD WITH CARE</text>
+<text x="1140" y="447" fill="#706a72" font-family="Arial,sans-serif" font-size="20" letter-spacing="2" text-anchor="end">GITHUB.COM/XXYOUKA</text>
 </svg>
