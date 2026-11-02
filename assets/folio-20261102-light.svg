@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-labelledby="title desc">
+<title id="title">xxyouka — selected works</title>
+<desc id="desc">A typographic cover introducing a portfolio of products, AI and interactive stories.</desc>
+<rect width="1200" height="380" fill="#f4f0e9"/>
+<rect x="24" y="24" width="1152" height="332" fill="none" stroke="#c8bfc5"/>
+<path d="M56 88H1144 M56 295H1144" stroke="#c8bfc5" fill="none"/>
+<text x="56" y="65" fill="#795388" font-family="Arial,sans-serif" font-weight="bold" font-size="21" letter-spacing="3">XX / YOUKA</text>
+<text x="1144" y="65" text-anchor="end" fill="#756c78" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">SELECTED WORKS · 2026</text>
+<text x="600" y="179" text-anchor="middle" fill="#292530" font-family="Georgia,serif" font-size="94" letter-spacing="-4">xxyouka<tspan fill="#795388">.</tspan></text>
+<text x="600" y="231" text-anchor="middle" fill="#292530" font-family="Georgia,serif" font-style="italic" font-size="39">Make things with care.</text>
+<text x="600" y="269" text-anchor="middle" fill="#756c78" font-family="Arial,sans-serif" font-size="20" letter-spacing="2">PRODUCTS  /  AI  /  STORIES</text>
+<text x="56" y="334" fill="#756c78" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">BUILD · EXPLORE · CREATE</text>
+<text x="1144" y="334" text-anchor="end" fill="#756c78" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">GITHUB.COM/XXYOUKA</text>
+</svg>
