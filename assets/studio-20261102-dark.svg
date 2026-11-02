@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="title desc">
+<title id="title">xx / xxyouka — a little corner of the internet</title>
+<desc id="desc">An illustrated workspace with a cat, a computer and a small fish, for a maker of products, AI and stories.</desc>
+<rect width="1200" height="520" fill="#171725"/>
+<rect x="24" y="24" width="1152" height="472" rx="2" fill="none" stroke="#494b64"/>
+<path d="M56 90H1144 M56 444H1144" fill="none" stroke="#494b64"/>
+<text x="56" y="66" fill="#cbb2f5" font-family="Arial,sans-serif" font-weight="bold" font-size="21" letter-spacing="3">XX / YOUKA</text>
+<text x="1144" y="66" text-anchor="end" fill="#a2a4c0" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">A LITTLE CORNER OF THE INTERNET</text>
+<text x="56" y="199" fill="#eaebf8" font-family="Georgia,serif" font-size="92" letter-spacing="-3">Make things</text>
+<text x="56" y="285" fill="#eaebf8" font-family="Georgia,serif" font-style="italic" font-size="80">with care<tspan fill="#cbb2f5">.</tspan></text>
+<rect x="58" y="322" width="6" height="51" rx="3" fill="#cbb2f5"/>
+<text x="82" y="341" fill="#a2a4c0" font-family="Arial,sans-serif" font-size="22" letter-spacing="1">PRODUCTS  /  AI  /  STORIES</text>
+<text x="82" y="373" fill="#a2a4c0" font-family="Arial,sans-serif" font-size="21">and a soft spot for cats.</text>
+<!-- A small workspace, drawn as a quiet editorial vignette. -->
+<rect x="728" y="121" width="396" height="280" rx="16" fill="#212235" stroke="#494b64"/>
+<path d="M728 160H1124" stroke="#494b64"/>
+<circle cx="751" cy="141" r="4" fill="#f2ba9a"/><circle cx="766" cy="141" r="4" fill="#cbb2f5"/><circle cx="781" cy="141" r="4" fill="#9dd9d4"/>
+<path d="M759 361H1094" stroke="#494b64" stroke-width="2"/>
+<!-- Monitor -->
+<rect x="784" y="207" width="207" height="134" rx="9" fill="#171725" stroke="#494b64" stroke-width="2"/>
+<path d="M784 230H991 M887 341V358 M851 359H923" fill="none" stroke="#494b64" stroke-width="2"/>
+<circle cx="800" cy="219" r="3" fill="#cbb2f5"/><circle cx="812" cy="219" r="3" fill="#9dd9d4"/>
+<text x="807" y="258" fill="#cbb2f5" font-family="monospace" font-size="16">&gt; hello, world_</text>
+<path d="M839 294 Q859 274 880 294 Q859 314 839 294 Z M880 294 L892 285 L892 303 Z" fill="none" stroke="#9dd9d4" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="850" cy="292" r="2" fill="#9dd9d4"/>
+<!-- Cat on the monitor -->
+<path d="M866 207 Q858 190 867 178 L869 164 L881 171 Q894 167 906 172 L917 164 L919 180 Q926 191 919 207 Z" fill="#f2ba9a" stroke="#eaebf8" stroke-width="2" stroke-linejoin="round"/>
+<path d="M881 187q3-3 6 0 M900 187q3-3 6 0 M891 195q3 3 6 0" fill="none" stroke="#eaebf8" stroke-width="2" stroke-linecap="round"/>
+<path d="M918 207 Q945 205 943 188" fill="none" stroke="#f2ba9a" stroke-width="5" stroke-linecap="round"/>
+<!-- Cup and plant -->
+<path d="M1012 329h30l-4 31h-22z M1041 335q15-1 12 10-2 7-13 6" fill="#292a40" stroke="#494b64" stroke-width="2"/>
+<path d="M1019 320q-5-6 0-12 M1030 320q-5-6 0-12" fill="none" stroke="#a2a4c0" stroke-width="2" stroke-linecap="round"/>
+<path d="M1067 360h23l-3-22h-17z M1078 338v-30 M1078 324q-16 0-16-12 15 0 16 12 M1078 317q3-13 15-13 0 12-15 13" fill="none" stroke="#9dd9d4" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1047 190v18 M1038 199h18 M814 179v12 M808 185h12" stroke="#cbb2f5" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="479" fill="#a2a4c0" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">BUILD · EXPLORE · CREATE</text>
+<text x="1144" y="479" text-anchor="end" fill="#a2a4c0" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">GITHUB.COM/XXYOUKA</text>
+</svg>

@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-20261102-dark.svg">
-  <img src="assets/cover-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/studio-20261102-dark.svg">
+  <img src="assets/studio-20261102-light.svg" alt="xx · XXYOUKA：一个有猫、有代码的小小工作室" width="100%">
 </picture>
 
 <p align="right"><sub><a href="https://xxyouka.github.io/">作品集 PORTFOLIO ↗</a>　·　<a href="mailto:1420272691@qq.com">联系 CONTACT ↗</a></sub></p>
@@ -11,7 +11,7 @@
 
 ## 把想法，做成作品。
 
-你好，我是 **xx / xxyouka**。我做微信小程序、AI 应用和互动作品，喜欢从具体场景出发，把想法做成可以使用、体验和持续改进的东西。
+你好，我是 **xx / xxyouka**。我喜欢从生活里的小问题出发，把想法做成可以使用的东西：有时是一个小程序，有时是一套识别系统，偶尔也讲一个关于猫的故事。
 
 *I build mini programs, AI applications and interactive experiences, turning ideas into things people can use.*
 
@@ -19,7 +19,7 @@
 
 <sub><b>01 / SELECTED WORKS</b>　·　精选作品</sub>
 
-## 从真实场景出发。
+## 一些正在生长的作品。
 
 ### [校园猫猫 ↗](https://xxyouka.github.io/#project/cat)
 
@@ -61,13 +61,19 @@
 
 <sub><b>03 / EXPERIENCE</b>　·　经历与工具</sub>
 
-## 做过的事，用过的工具。
+## 工作台抽屉。
+
+<details>
+<summary>打开看看：工具与经历</summary>
+
 
 - **产品与开发**：微信小程序 · CloudBase · JavaScript / TypeScript · Python
 - **视觉与 AI**：OpenCV · 目标检测 · 特征检索 · 数据评估
 - **测试与设备**：Java · JUnit 5 · JaCoCo · PIT · ESP32
 
 曾参与软件测试与创新创业竞赛：全国大学生软件测试大赛国家级二等奖、广东省职业院校学生专业技能大赛软件测试省级二等奖，以及“挑战杯”广东大学生创业计划竞赛省级铜奖（果智瞳）。
+
+</details>
 
 <br>
 
