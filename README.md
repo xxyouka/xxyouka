@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-dark.svg?v=4">
-  <img src="assets/cover-light.svg?v=4" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover-20261102-dark.svg">
+  <img src="assets/cover-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
 <p align="right"><sub><a href="https://xxyouka.github.io/">作品集 PORTFOLIO ↗</a>　·　<a href="mailto:1420272691@qq.com">联系 CONTACT ↗</a></sub></p>
@@ -21,21 +21,29 @@
 
 ## 从真实场景出发。
 
-### [校园猫猫 ↗](https://xxyouka.github.io/#project/cat)　<sub>微信小程序 · CLOUDBASE</sub>
+### [校园猫猫 ↗](https://xxyouka.github.io/#project/cat)
+
+<sub>微信小程序 · CLOUDBASE</sub>
 
 让校园里的猫咪信息可以被记录、查找和持续维护。围绕个体档案连接相册、相遇记录与救助进展。  
 [公开代码：核心档案版](https://github.com/xxyouka/campus-cat-platform)
 
-### [pet-id ↗](https://xxyouka.github.io/#project/pet)　<sub>图像识别 · 个体检索</sub>
+### [pet-id ↗](https://xxyouka.github.io/#project/pet)
 
-从检测、特征提取到检索，探索如何区分外观相似的宠物个体。测试台记录的 199 张留出图 Top-1 为 84.4%（测试口径，非线上准确率）。
+<sub>图像识别 · 个体检索</sub>
 
-### [一只猫的第九条命 ↗](https://jiutiaoming.pages.dev/)　<sub>互动叙事 · H5 · 生成式 AI</sub>
+从检测、特征提取到检索，探索如何区分外观相似的宠物个体。2026 年 11 月测试台记录的 199 张留出图 Top-1 为 84.4%（测试口径，非线上准确率）。
+
+### [一只猫的第九条命 ↗](https://jiutiaoming.pages.dev/)
+
+<sub>互动叙事 · H5 · 生成式 AI</sub>
 
 以流浪猫的生命旅程为线索，通过四次选择走向不同结局，把分支叙事、插画和声音组合成可体验的作品。  
 [查看创作详情](https://xxyouka.github.io/#project/ninth)
 
-### [双人食刻 ↗](https://xxyouka.github.io/#project/meal)　<sub>微信小程序 · CLOUDBASE</sub>
+### [双人食刻 ↗](https://xxyouka.github.io/#project/meal)
+
+<sub>微信小程序 · CLOUDBASE</sub>
 
 围绕两个人的日常餐桌，把共享菜谱、点菜、库存和做饭轮值放进同一个空间。
 
