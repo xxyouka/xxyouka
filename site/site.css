@@ -62,3 +62,18 @@ a,button{touch-action:manipulation}h1,h2,h3{text-wrap:balance}.project-meta,.cas
   .case-position{padding-right:66px}
   #dialog-cover .zoom-image{align-self:stretch;width:100%}
 }
+
+/* 2026-11-12 迭代：首屏整齐、降低动效干扰、增强系统偏好支持 */
+@media (min-width:901px){
+  .stage.hero-v2{padding:50px 0 20px;gap:25px}
+}
+@media (forced-colors:active){
+  .ocean{display:none}
+}
+dialog{scrollbar-gutter:stable}
+
+/* 海洋延迟启动后淡入，避免首屏突然出现背景 */
+.ocean{opacity:0;transition:opacity 1.2s ease}
+.ocean-ready .ocean{opacity:.28}
+@media (prefers-reduced-motion:reduce){.ocean{transition:none}}
+@media print{.ocean{display:none}}

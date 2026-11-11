@@ -102,8 +102,8 @@ export class OceanEngine {
 
   /** Reduced motion: let the ecosystem settle, then show a single frame. */
   private drawStill() {
-    if (this.world.time < 4) {
-      for (let i = 0; i < 240; i++) this.world.step(STEP);
+    if (this.world.time < 1.5) {
+      for (let i = 0; i < 90; i++) this.world.step(STEP);
     }
     this.renderer.render(this.world, STEP);
   }
