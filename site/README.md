@@ -11,6 +11,7 @@
 | `index.html` | 单页结构、项目卡、案例文案、元数据与 JSON-LD |
 | `site.css` | 视觉、响应式与弹窗；文件末尾是 2026-11-11 的优化层 |
 | `site.js` | 筛选、案例弹窗、图库、分享、复制邮箱、键盘与历史记录 |
+| `pixel-preview.js` | 只在桌面悬停设备加载的像素预览与光斑 |
 | `ocean.js` | ASCII 海洋运行产物；源码在 `source/ocean/` |
 | `source/ocean/` | 海洋的 TypeScript 源码（含 `site-entry.ts`） |
 | `assets/` | WebP 项目截图、SVG 图标、Noto Serif SC 字体子集、分享图 |
@@ -39,12 +40,13 @@ Windows 仍可用 `start-preview.ps1`。页面没有构建步骤，改完刷新�
 - 项目卡片、首屏、关于、联系：`index.html`
 - 案例文案、图片列表、链接、证据数字：`site.js` 里的 `projects`、`caseMeta`、`caseNotes`
 - 视觉与手机排版：`site.css`；新增规则优先追加到末尾，避免翻改旧的层叠
+- 桌面悬停预览：`pixel-preview.js`，由 `site.js` 在 hover 设备上按需加载；改它时同步更新 `site.js` 里的 `?v=` 版本号
 - 图片与图标：`assets/`
 - 分享预览图：`assets/og-cover-20261102c.png`（1200×630，对应 `og:image`）
 
 ## ASCII 海洋
 
-海洋是固定视口的背景，不随页面高度拉伸：桌面约 93 条鱼、手机约 45–110 条，按视口面积计算。它会在首次指针 / 滚动 / 键盘交互时启动，3 秒后兜底启动并淡入；标签页隐藏、元素不可见或系统开启“减少动态效果”时停止计算。延迟启动是为了不抢首屏和 Lighthouse 的 TBT。
+海洋是固定视口的背景，不随页面高度拉伸：桌面约 93 条鱼、手机约 45–110 条，按视口面积计算。它会在首次点击 / 键盘 / 触摸交互时启动，加载后 3 秒兜底启动并淡入；标签页隐藏、元素不可见或系统开启“减少动态效果”时停止计算。延迟启动是为了不抢首屏和 Lighthouse 的 TBT。
 
 修改 `source/ocean/` 后重新打包（需要一次性的 `esbuild`）：
 
@@ -83,7 +85,7 @@ npx esbuild source/ocean/site-entry.ts \
 python3 scripts/check.py
 ```
 
-2026-11-12 的复查：HTML 结构校验通过；axe（桌面、手机、弹窗）0 违规；320 / 360 / 390 / 600 / 768 / 1024 / 1200 / 1440px 无横向溢出；海洋在 1440×900 下约 55fps（无 GPU 的 headless Chromium），固定视口后不再随文档高度增加计算量；Lighthouse 本地移动端 98（headless Chromium，模拟 4G / 4× CPU），TBT 约 90ms。详细的人工验收记录见 git 历史。
+2026-11-12 的复查：HTML 结构校验通过；axe（桌面、手机、弹窗）0 违规；320 / 360 / 390 / 600 / 768 / 1024 / 1200 / 1440px 无横向溢出；海洋在 1440×900 下约 55fps（无 GPU 的 headless Chromium），固定视口后不再随文档高度增加计算量；Lighthouse 本地移动端 99（headless Chromium，模拟 4G / 4× CPU），TBT 0ms；桌面端 100。详细的人工验收记录见 git 历史。
 
 ## 字体与配色
 

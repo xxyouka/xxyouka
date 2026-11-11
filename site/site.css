@@ -77,3 +77,18 @@ dialog{scrollbar-gutter:stable}
 .ocean-ready .ocean{opacity:.28}
 @media (prefers-reduced-motion:reduce){.ocean{transition:none}}
 @media print{.ocean{display:none}}
+.ocean{visibility:hidden}
+.ocean-ready .ocean{visibility:visible}
+
+/* 阅读进度用 CSS 滚动时间线，避免每次滚动读取 scrollHeight 造成强制布局 */
+@supports (animation-timeline: scroll()) {
+  .progress{animation:progress-grow linear both;animation-timeline:scroll(root block)}
+}
+@keyframes progress-grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* 回到顶部也交给滚动时间线；不支持时保持可见，避免功能消失 */
+.reading-tools{opacity:1;transform:none;pointer-events:auto}
+@supports (animation-timeline: scroll()) {
+  .reading-tools{opacity:0;transform:translateY(10px);animation:tools-reveal linear both;animation-timeline:scroll(root block);animation-range:200px 300px}
+}
+@keyframes tools-reveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}

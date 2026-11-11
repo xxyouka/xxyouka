@@ -30,11 +30,16 @@ function startWhenIdle() {
   }
 }
 
+let intentTimer = 0;
+
 function startOnIntent() {
-  startWhenIdle();
+  // Wait until the interaction settles; starting the engine mid-scroll would
+  // add a long task exactly when the page is busiest.
+  window.clearTimeout(intentTimer);
+  intentTimer = window.setTimeout(startWhenIdle, 900);
 }
 
-for (const type of ['pointermove', 'pointerdown', 'scroll', 'keydown', 'touchstart'] as const) {
+for (const type of ['pointerdown', 'keydown', 'touchstart'] as const) {
   window.addEventListener(type, startOnIntent, { once: true, passive: true });
 }
 
