@@ -31,6 +31,10 @@ $('#copy-email').addEventListener('click',async()=>{try{if(!navigator.clipboard?
 
 syncCaseRoute();
 
+/* Keep the header in sync with the section in the reading band. */
+function setActive(id){nav.querySelectorAll('a[href^="#"]').forEach(a=>{if(a.hash==='#'+id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}
+if('IntersectionObserver'in window){const sections=[$('.stage'),...$$('.below>.section')];const navObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)setActive(entry.target.id||'')})},{rootMargin:'-30% 0px -60% 0px'});sections.forEach(section=>navObserver.observe(section))}
+
 /* Pixel preview is desktop-only; load it after the core interactions so
    phones never parse the canvas code. */
 if (matchMedia('(hover: hover) and (pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
