@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xxyouka.github.io/sitemap.xml
+Sitemap: https://xxyouka.github.io/portfolio/sitemap.xml

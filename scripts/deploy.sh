@@ -10,6 +10,16 @@ if [[ -n "$(git status --porcelain)" ]]; then
   exit 1
 fi
 
+echo "先跑仓库体检…"
+python3 scripts/check.py
+
+if [[ "${1:-}" == "--dry-run" ]]; then
+  echo "dry-run：将执行"
+  echo "  git subtree push --prefix=site git@github.com:xxyouka/xxyouka.github.io.git main"
+  echo "  git subtree push --prefix=portfolio git@github.com:xxyouka/portfolio.git main"
+  exit 0
+fi
+
 git subtree push --prefix=site git@github.com:xxyouka/xxyouka.github.io.git main
 git subtree push --prefix=portfolio git@github.com:xxyouka/portfolio.git main
 

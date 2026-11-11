@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://xxyouka.github.io/portfolio/sitemap.xml

@@ -1,82 +1,100 @@
 # xxyouka · 个人作品集
 
-入口：index.html。纯静态网站，无需安装依赖或构建。
+入口 `index.html`。纯静态单页，没有构建步骤、没有框架、没有追踪脚本。线上：<https://xxyouka.github.io/>。
 
-> 2026-11-11 起源码并入 `xxyouka` 仓库的 `site/` 目录（根 README 为 GitHub 主页）；部署仍发布到原仓库 `xxyouka/xxyouka.github.io`。
+> 2026-11-11 起源码并入 `xxyouka` 仓库的 `site/` 目录；部署仍发布到原仓库 `xxyouka/xxyouka.github.io` 的 `main` 分支。
 
-站点已上线：https://xxyouka.github.io/（GitHub Pages 根站，仓库 xxyouka/xxyouka.github.io，main 分支根目录，含 `.nojekyll`）。页面为纯静态、无构建步骤，所有本地资源使用相对路径；线上文件包括 index.html、site.css、site.js、ocean.js、assets/ 与 THIRD-PARTY-LICENSE.txt。`.playwright-mcp/` 仅用于本地截图与审查，不参与部署。
+## 目录
 
-## 内容维护
+| 路径 | 内容 |
+| --- | --- |
+| `index.html` | 单页结构、项目卡、案例文案、元数据与 JSON-LD |
+| `site.css` | 视觉、响应式与弹窗；文件末尾是 2026-11-11 的优化层 |
+| `site.js` | 筛选、案例弹窗、图库、分享、复制邮箱、键盘与历史记录 |
+| `ocean.js` | ASCII 海洋运行产物；源码在 `source/ocean/` |
+| `source/ocean/` | 海洋的 TypeScript 源码（含 `site-entry.ts`） |
+| `assets/` | WebP 项目截图、SVG 图标、Noto Serif SC 字体子集、分享图 |
+| `404.html` | GitHub Pages 根站 404 |
+| `robots.txt`、`sitemap.xml` | 抓取与站点地图 |
+| `THIRD-PARTY-LICENSE.txt` | 第三方许可 |
 
-- 项目卡片、个人介绍与链接：index.html
-- 案例文案、图片列表、筛选和导航：site.js；案例年份、角色、技术栈与结果：site.js 的 caseMeta
-- 视觉与手机排版：site.css
-- 图片与图标：assets/
-- 分享预览图：assets/og-cover-20261102c.png（1200×630，对应 og:image）
-- 标题衬线：assets/fonts/noto-serif-sc-display.woff2（Noto Serif SC 子集，SIL OFL 1.1，见 assets/fonts/OFL.txt）
-- ASCII 海洋：ocean.js，基于 stackedlol/ascii-sharks（MIT），有本项目的锦鲤与全页适配修改。
+## 本地预览
 
-## 已包含的体验
+在仓库根目录运行：
 
-首屏以 Vol.01 封面形式展示真实项目手机截图；四个精选项目、分类筛选、案例详情、图片切换与大图、键盘关闭、手机导航、阅读进度与回到顶部。案例详情包含 YEAR / ROLE / STACK 与结果。桌面端项目卡支持指针跟随光斑和像素溶解真实截图预览；触屏与「减少动态效果」设置下自动关闭。
-三条鲨鱼与一条锦鲤在网页空间内自由游动，不随滚动转向或跟随视窗。系统减少动态效果设置会被尊重，标签页隐藏时停止动画计算。
+```bash
+./scripts/preview.sh 8766
+```
 
-## 素材说明
+然后打开 <http://127.0.0.1:8766/site/>。也可以直接：
 
-首页作品卡使用 ASCII 字符画；项目详情使用实际运行截图。校园猫猫同时保留品牌分享卡；品牌卡与界面截图中的项目名统一为公开用名「校园猫猫」。公开素材统一遵循 xx / xxyouka 的匿名约定。
+```bash
+python3 -m http.server 8766 --bind 127.0.0.1
+```
 
-## 验证记录（2026-11-02）
+Windows 仍可用 `start-preview.ps1`。页面没有构建步骤，改完刷新即可。
 
-已检查 320、360、390、600、768、900、1024、1280、1440px 九个宽度，均无横向溢出；首屏两张真实项目截图在九个宽度下均正常加载。四张作品卡使用新的 ASCII 构图（故事分支、猫咪档案卡、宠物检索、双人餐桌），在 320–1440px 下均无裁切，也不与卡片说明文字重叠；四个案例的 YEAR / ROLE / STACK 与结果均正常渲染；标题衬线在 320–1440px 正常加载，项目、关于、联系与弹窗标题均无溢出，分享图使用同一套字体；猫猫、pet-id、双人食刻与第九条命案例的过程、取舍与数据证据在桌面和手机端正常渲染；桌面端四张卡的悬停预览与像素切换、移出还原、悬停后点击打开详情均正常，触屏与 reduced-motion 下预览自动禁用。逐个打开四个项目的桌面与手机详情，图片完整加载，手机截图带设备边框且放大按钮在首屏内完整可见。筛选计数、#project 直达、浏览器返回关闭、前后切换、方向键换图、大图查看、手机菜单、复制链接与复制邮箱均正常；无控制台报错或资源 404。
+## 改内容
 
-线上部署与案例弹窗验证（2026-11-02）：https://xxyouka.github.io/ 已返回 200，四个案例分别通过 `#project/ninth`、`#project/cat`、`#project/pet`、`#project/meal` 直达验证；桌面 1440px 与手机 390px 下标题、序号、事实、过程、取舍、结果、证据与交付均正常渲染。封面、第二张图库图与放大查看器均从线上 assets 加载；前后切换、图库切换、浏览器返回关闭、筛选计数（02 / 02 / 01 / 04）与无效项目代号拦截均正常，无横向溢出、资源 404 或控制台报错。
+- 项目卡片、首屏、关于、联系：`index.html`
+- 案例文案、图片列表、链接、证据数字：`site.js` 里的 `projects`、`caseMeta`、`caseNotes`
+- 视觉与手机排版：`site.css`；新增规则优先追加到末尾，避免翻改旧的层叠
+- 图片与图标：`assets/`
+- 分享预览图：`assets/og-cover-20261102c.png`（1200×630，对应 `og:image`）
 
-公开素材复查（2026-11-02）：页面、元信息、分享图与案例图片均按 xx / xxyouka 的匿名约定检查，不出现真实姓名、学校全名或专业信息。项目公开名已统一为「校园猫猫」，首页与品牌卡截图中的旧名已匿名化；线上旧素材地址返回 404。
+## ASCII 海洋
 
-## 字体
+海洋是固定视口的背景，不随页面高度拉伸：桌面约 93 条鱼、手机约 45–110 条，按视口面积计算；标签页隐藏、元素不可见或系统开启“减少动态效果”时停止计算。
 
-- 标题：Noto Serif SC 子集（assets/fonts/noto-serif-sc-display.woff2，SIL OFL 1.1）。
-- 正文：系统无衬线；标签与编号：Consolas mono；英文名使用 Georgia italic。
-- 标题字体是当前页面文字的字符子集；新增标题若出现缺字，需要重新生成子集。
+修改 `source/ocean/` 后重新打包（需要一次性的 `esbuild`）：
+
+```bash
+npx esbuild source/ocean/site-entry.ts \
+  --bundle --minify --format=iife --target=es2020 \
+  --outfile=ocean.js
+```
+
+页面引用带版本号：`ocean.js?v=YYYYMMDD-vN`。改完 `ocean.js`、`site.css` 或 `site.js` 后，同步更新 `index.html` 里的版本号，避免返回用户拿到旧缓存。
+
+## 图片
+
+站内截图统一为 WebP，HTML 里写明 `width`/`height` 与 `alt`，首屏主图使用 `fetchpriority="high"`。新增或替换图片时：
+
+1. 保持原始比例，导出 WebP（照片 82–86，含文字截图 88–90）；
+2. 更新 `index.html` / `site.js` / 文档中的文件名；
+3. 运行 `python3 scripts/check.py` 检查引用。
 
 ## 分享与 SEO
 
-分享预览图使用 assets/og-cover-20261102c.png，canonical、og:url、og:image 与 Twitter Card 均指向 https://xxyouka.github.io/。若站点地址变化，需要同步修改 index.html 头部的绝对地址。
+- canonical、`og:url`、`og:image` 与 Twitter Card 均指向 `https://xxyouka.github.io/`。
+- `robots.txt` 与 `sitemap.xml` 已提供；`404.html` 带 `noindex`。
+- JSON-LD 使用 `ProfilePage` + `Person`，作品列在 `hasPart`。
+- 若站点地址变化，需要同步修改 `index.html` 头部的绝对地址与两个 SEO 文件。
 
 ## 案例链接
 
-项目链接使用 #project/项目代号，可直接打开对应详情。支持前后切换、复制链接及浏览器返回关闭。链接自动使用当前站点地址：本地预览链接只能在本机访问，部署后会使用正式站点地址。
+项目链接使用 `#project/项目代号`，可直接打开对应详情；支持前后切换、方向键换图、复制链接、浏览器返回关闭。本地预览生成的是本机地址，部署后自动使用正式站点地址。
 
-## 真实项目截图（本轮）
+## 验证
 
-通过微信开发者工具截取校园猫猫首页、双人食刻首页及菜谱页；启动 pet-id 并使用现有猫图完成识别，保存实际返回结果；所有素材均来自项目实际页面。公开截图中的项目名已替换为公开用名「校园猫猫」。
+仓库根目录运行：
 
-## 项目目录与本地预览
+```bash
+python3 scripts/check.py
+```
 
-项目现在位于 `E:\项目\xxyouka-portfolio`。在该目录运行 `python -m http.server 8766 --bind 127.0.0.1`，然后打开 `http://127.0.0.1:8766/`；也可以运行 `start-preview.ps1`。
+2026-11-11 的复查：HTML 结构校验通过；axe（桌面、手机、弹窗）0 违规；320 / 360 / 390 / 600 / 768 / 1024 / 1200 / 1440px 无横向溢出；海洋在 1440×900 下约 59fps（无 GPU 的 headless Chromium），固定视口后不再随文档高度增加计算量。详细的人工验收记录见 git 历史。
 
-`source/ocean/` 保留经过修改的 ASCII 海洋 TypeScript 源码，根目录 `ocean.js` 为浏览器运行产物。日常页面修改直接编辑根目录 HTML/CSS/JS。
+## 字体与配色
 
-## 案例浏览体验
+- 标题：Noto Serif SC 子集（`assets/fonts/noto-serif-sc-display.woff2`，SIL OFL 1.1）。
+- 正文：系统无衬线；标签与编号：等宽。
+- 配色：Catppuccin Mocha；项目字符画使用 Teal、Peach、Mauve、Yellow。
 
-案例链接会校验项目代号；浏览器前进、返回可打开或关闭详情。切换案例时焦点移至新标题；方向键可切换案例图片，在链接输入框中保留文本操作。
+## 部署
 
-校园猫猫案例新增了「档案优先 → 归并信息 → 建立回路」的过程、设计取舍与界面数据（117 猫咪档案 / 1,382 相册 / 4.4w 浏览，注明数据来自小程序截图）。
+```bash
+./scripts/deploy.sh
+```
 
-pet-id 案例补充了「检测 → 特征 → 检索」链路、top-k 取舍与测试台数据（84.4% 留出图 Top-1 / 1,235 底库图片 / 111 只猫，注明为测试口径而非线上准确率）。
-
-双人食刻案例补充了「共享空间 → 当餐菜单 → 日常回路」的过程、取舍与界面数据（31 道菜谱 / 2 个餐次 / 2 人空间；库存满足项注明为界面示例）。
-
-第九条命案例补充了「选择 → 内容 → 交付」的过程、取舍与在线证据（4 次选择 / 5 个结局 / LIVE，来源为在线作品说明与页面）。
-
-## 完整页面截图（2026-11-01）
-
-猫猫首页使用匿名化后的 assets/campus-full-neutral-20261102.jpg，品牌分享卡使用 assets/campus-brand-neutral-20261102.webp，项目名统一为公开用名「校园猫猫」；双人食刻首页与菜谱、pet-id 实际样本识别及第九条命在线互动页使用带 full-20261101 的文件。详情图保留完整比例并支持放大；未再引用的旧截图与矢量封面已清理，归档包留在 `.playwright-mcp/archived-unused-assets-20261101.zip`。
-
-## 首页与详情展示
-
-首页首屏用两件真实项目的手机截图组成 Vol.01 封面；作品卡使用与项目主题对应的 ASCII 字符画；真实运行截图集中在项目详情中，保留完整比例并支持放大查看。手机端截图会带上设备边框展示。
-
-## 配色
-
-当前使用 Catppuccin Mocha 官方色板（https://catppuccin.com/palette/），以 Base / Mantle 作背景，Text 作正文，Mauve 作主交互色，项目字符画使用 Teal、Peach、Mauve、Yellow。
+脚本会先跑 `scripts/check.py`，确认工作区干净后，用 `git subtree push` 把 `site/` 推到 `xxyouka.github.io` 的 `main`。线上地址保持不变。

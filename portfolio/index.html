@@ -11,7 +11,20 @@
   <meta property="og:description" content="用代码照顾校园里的猫。AI、小程序与校园猫。">
   <meta property="og:url" content="https://xxyouka.github.io/portfolio/">
   <meta property="og:image" content="https://xxyouka.github.io/portfolio/assets/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="xx 的作品集：校园猫猫、pet-id、果智瞳、software-test-helper、BitClock。">
+  <meta property="og:site_name" content="xx · XXYOUKA — 作品集">
+  <meta property="og:locale" content="zh_CN">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="xx · XXYOUKA — 作品集 / Portfolio">
+  <meta name="twitter:description" content="用代码照顾校园里的猫。AI、小程序与校园猫。">
+  <meta name="twitter:image" content="https://xxyouka.github.io/portfolio/assets/og.jpg">
+  <meta name="twitter:image:alt" content="xx 的作品集：校园猫猫、pet-id、果智瞳、software-test-helper、BitClock。">
+  <meta name="author" content="xx">
+  <meta name="color-scheme" content="light dark">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <meta name="theme-color" content="#F2EEE4">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23B34A28'/%3E%3Ccircle cx='16' cy='18' r='9' fill='%23F2EEE4'/%3E%3Cpath d='M8 13V5l6 4z' fill='%23F2EEE4'/%3E%3Cpath d='M24 13V5l-6 4z' fill='%23F2EEE4'/%3E%3Ccircle cx='12.5' cy='17' r='1.3' fill='%23B34A28'/%3E%3Ccircle cx='19.5' cy='17' r='1.3' fill='%23B34A28'/%3E%3Cpath d='M14.5 21q1.5 1.4 3 0' stroke='%23B34A28' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
   <script>
@@ -537,7 +550,7 @@
     .index { border-top: 1px solid var(--line-strong); }
 
     .work {
-      scroll-margin-top: 80px;
+      scroll-margin-top: 90px;
       display: grid;
       grid-template-columns: 54px minmax(0, 1fr) 210px 120px;
       gap: clamp(16px, 3vw, 40px);
@@ -865,12 +878,15 @@
       .shot { padding: 0 12px 12px 0; }
     }
 
+    .feature, .section { scroll-margin-top: 84px; }
+
     @media print {
       .top, .theme, .skip, .scroll { display: none !important; }
       body { background: #fff; color: #000; }
       .section { padding-top: 32px; }
     }
   </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"xx · XXYOUKA — 作品集","url":"https://xxyouka.github.io/portfolio/","inLanguage":"zh-CN","mainEntity":{"@type":"Person","name":"xx","alternateName":"xxyouka","url":"https://xxyouka.github.io/","sameAs":["https://github.com/xxyouka"],"jobTitle":"数字产品开发者","knowsAbout":["微信小程序","CloudBase","AI 视觉","互动叙事","软件测试"]},"hasPart":[{"@type":"CreativeWork","name":"校园猫猫","url":"https://xxyouka.github.io/portfolio/#cat"},{"@type":"CreativeWork","name":"pet-id","url":"https://xxyouka.github.io/portfolio/#petid"},{"@type":"CreativeWork","name":"果智瞳","url":"https://xxyouka.github.io/portfolio/#grape"},{"@type":"CreativeWork","name":"software-test-helper","url":"https://xxyouka.github.io/portfolio/#test-helper"},{"@type":"CreativeWork","name":"BitClock","url":"https://xxyouka.github.io/portfolio/#bitclock"},{"@type":"CreativeWork","name":"danmu-player","url":"https://xxyouka.github.io/portfolio/#danmu"}]}</script>
 </head>
 <body>
   <a class="skip" href="#main">跳到主要内容 / Skip to content</a>
@@ -884,7 +900,7 @@
         <a href="#about">关于 <span>About</span></a>
         <a class="nav-gh" href="https://github.com/xxyouka" rel="me">GitHub ↗</a>
       </nav>
-      <button class="theme" type="button" aria-label="切换深色模式">
+      <button class="theme" type="button" aria-label="Dark — 切换到深色模式">
         <span class="dot" aria-hidden="true"></span><span class="theme-text">Dark</span>
       </button>
     </div>
@@ -950,19 +966,19 @@
           </ul>
         </div>
         <figure class="shot">
-          <img src="assets/cat-detail.png" width="379" height="819" loading="lazy" alt="校园猫猫小程序里的猫咪详情页，显示大宝的照片、毛色、绝育状态与最近相遇记录">
+          <img src="assets/cat-detail.webp" width="379" height="819" loading="lazy" decoding="async" alt="校园猫猫小程序里的猫咪详情页，显示大宝的照片、毛色、绝育状态与最近相遇记录">
           <figcaption><span>猫咪详情 · 2026</span><span>一人 + 一支 AI 团队</span></figcaption>
         </figure>
       </article>
 
       <article class="feature reverse" id="petid" data-reveal>
         <figure class="mosaic">
-          <img src="assets/pet-id/cat-01.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 1">
-          <img src="assets/pet-id/cat-02.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 2">
-          <img src="assets/pet-id/cat-03.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 3">
-          <img src="assets/pet-id/cat-04.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 4">
-          <img src="assets/pet-id/cat-05.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 5">
-          <img src="assets/pet-id/cat-06.jpg" width="520" height="520" loading="lazy" alt="校园猫特写 6">
+          <img src="assets/pet-id/cat-01.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 1">
+          <img src="assets/pet-id/cat-02.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 2">
+          <img src="assets/pet-id/cat-03.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 3">
+          <img src="assets/pet-id/cat-04.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 4">
+          <img src="assets/pet-id/cat-05.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 5">
+          <img src="assets/pet-id/cat-06.webp" width="520" height="520" loading="lazy" decoding="async" alt="校园猫特写 6">
           <figcaption><span>底库样本 · 112 只 / 1,236 张</span><span>Top-1 84.4%</span></figcaption>
         </figure>
         <div class="feature-copy">
@@ -1097,6 +1113,7 @@
       <div class="footer-links">
         <a href="https://github.com/xxyouka" rel="me">GitHub ↗</a>
         <a href="https://github.com/xxyouka/portfolio">Repository ↗</a>
+        <a href="https://xxyouka.github.io/">新版主页 ↗</a>
         <a href="#top">回到顶部 ↑</a>
       </div>
     </div>
@@ -1122,7 +1139,7 @@
         var dark = current() === 'dark';
         label.textContent = dark ? 'Light' : 'Dark';
         btn.setAttribute('aria-pressed', String(dark));
-        btn.setAttribute('aria-label', dark ? '切换到浅色模式' : '切换到深色模式');
+        btn.setAttribute('aria-label', dark ? 'Light — 切换到浅色模式' : 'Dark — 切换到深色模式');
         var meta = document.querySelector('meta[name="theme-color"]');
         if (meta) meta.setAttribute('content', dark ? '#12110F' : '#F2EEE4');
       }
