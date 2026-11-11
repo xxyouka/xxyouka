@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-# 把本仓库里的 site/、portfolio/ 部署回原来的两个 GitHub Pages 仓库。
-# 线上地址保持不变：https://xxyouka.github.io/ 与 https://xxyouka.github.io/portfolio/
+# 只发布根站：https://xxyouka.github.io/
+# 线上源码来自本仓库的 site/ 子树；portfolio/ 保留为归档源码，不再单独部署。
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
+
+TARGET="git@github.com:xxyouka/xxyouka.github.io.git"
 
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "工作区不干净，先提交改动再部署。" >&2
@@ -21,17 +23,14 @@ check_target() {
     return 1
   fi
 }
-check_target git@github.com:xxyouka/xxyouka.github.io.git || exit 1
-check_target git@github.com:xxyouka/portfolio.git || exit 1
+check_target "$TARGET" || exit 1
 
 if [[ "${1:-}" == "--dry-run" ]]; then
   echo "dry-run：将执行"
-  echo "  git subtree push --prefix=site git@github.com:xxyouka/xxyouka.github.io.git main"
-  echo "  git subtree push --prefix=portfolio git@github.com:xxyouka/portfolio.git main"
+  echo "  git subtree push --prefix=site ${TARGET} main"
   exit 0
 fi
 
-git subtree push --prefix=site git@github.com:xxyouka/xxyouka.github.io.git main
-git subtree push --prefix=portfolio git@github.com:xxyouka/portfolio.git main
+git subtree push --prefix=site "$TARGET" main
 
-echo "已推送。GitHub Pages 通常在一分钟内更新。"
+echo "已推送。GitHub Pages 通常在一分钟内更新：https://xxyouka.github.io/"

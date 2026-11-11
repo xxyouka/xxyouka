@@ -33,7 +33,7 @@
 
 ## 注意
 
-- 这是 GitHub 个人主页展示仓库，不是网站源码；完整作品集在 <https://xxyouka.github.io/>，旧刊在 <https://xxyouka.github.io/portfolio/>。
+- 这是 GitHub 个人主页展示仓库，不是网站源码；完整作品集在 <https://xxyouka.github.io/>。
 - 图片走相对路径，改文件名要同步改 README 里的 `srcset`。
 - README 的锚点由 GitHub 生成；中文标题链接使用 `#user-content-...`，改标题后要同步导航。
 

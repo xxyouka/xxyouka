@@ -2,9 +2,9 @@
 
 一个单页作品集：杂志编辑风，中英双语，零依赖、零构建、零追踪。
 
-> 2026-11-11 起源码并入 `xxyouka` 仓库的 `portfolio/` 目录；部署仍发布到原仓库 `xxyouka/portfolio`。
+> 2026-11-11 起源码并入 `xxyouka` 仓库的 `portfolio/` 目录；**已归档，不再单独部署**。
 
-**Live → [xxyouka.github.io/portfolio](https://xxyouka.github.io/portfolio/)**
+**线上只保留根站 → [xxyouka.github.io](https://xxyouka.github.io/)**；本目录用于保留旧版设计与本地预览。
 
 ## 内容
 
