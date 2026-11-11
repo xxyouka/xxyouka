@@ -13,6 +13,17 @@ fi
 echo "先跑仓库体检…"
 python3 scripts/check.py
 
+check_target() {
+  local url="$1"
+  if ! GIT_SSH_COMMAND="ssh -o BatchMode=yes -o ConnectTimeout=10" git ls-remote "$url" >/dev/null 2>&1; then
+    echo "无法访问部署仓库：$url" >&2
+    echo "仓库可能已被删除或改名。请先在 GitHub 创建同名仓库并启用 Pages，再运行本脚本。" >&2
+    return 1
+  fi
+}
+check_target git@github.com:xxyouka/xxyouka.github.io.git || exit 1
+check_target git@github.com:xxyouka/portfolio.git || exit 1
+
 if [[ "${1:-}" == "--dry-run" ]]; then
   echo "dry-run：将执行"
   echo "  git subtree push --prefix=site git@github.com:xxyouka/xxyouka.github.io.git main"
