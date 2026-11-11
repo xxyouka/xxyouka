@@ -2,6 +2,8 @@
 
 入口：index.html。纯静态网站，无需安装依赖或构建。
 
+> 2026-11-11 起源码并入 `xxyouka` 仓库的 `site/` 目录（根 README 为 GitHub 主页）；部署仍发布到原仓库 `xxyouka/xxyouka.github.io`。
+
 站点已上线：https://xxyouka.github.io/（GitHub Pages 根站，仓库 xxyouka/xxyouka.github.io，main 分支根目录，含 `.nojekyll`）。页面为纯静态、无构建步骤，所有本地资源使用相对路径；线上文件包括 index.html、site.css、site.js、ocean.js、assets/ 与 THIRD-PARTY-LICENSE.txt。`.playwright-mcp/` 仅用于本地截图与审查，不参与部署。
 
 ## 内容维护
