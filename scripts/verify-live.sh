@@ -37,6 +37,11 @@ for query in $(grep -oE '(site\.css|site\.js)\?v=[A-Za-z0-9._-]+' <<<"$html" | s
   check "$BASE/$query"
 done
 
+index_html="$(curl -fsSL --max-time 15 "$BASE/projects.html")"
+for query in $(grep -oE 'projects\.css\?v=[A-Za-z0-9._-]+' <<<"$index_html" | sort -u); do
+  check "$BASE/$query"
+done
+
 js_query="$(grep -oE 'site\.js\?v=[A-Za-z0-9._-]+' <<<"$html" | head -1)"
 if [[ -n "$js_query" ]]; then
   js_body="$(curl -fsSL --max-time 15 "$BASE/$js_query")"
