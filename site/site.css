@@ -89,6 +89,15 @@ dialog{scrollbar-gutter:stable}
 /* 回到顶部也交给滚动时间线；不支持时保持可见，避免功能消失 */
 .reading-tools{opacity:1;transform:none;pointer-events:auto}
 @supports (animation-timeline: scroll()) {
-  .reading-tools{opacity:0;transform:translateY(10px);animation:tools-reveal linear both;animation-timeline:scroll(root block);animation-range:200px 300px}
+  .reading-tools{opacity:0;visibility:hidden;transform:translateY(10px);animation:tools-reveal linear both;animation-timeline:scroll(root block);animation-range:200px 300px}
 }
-@keyframes tools-reveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes tools-reveal{from{opacity:0;visibility:hidden;transform:translateY(10px)}to{opacity:1;visibility:visible;transform:none}}
+@media (prefers-reduced-motion:reduce){.reading-tools{visibility:visible;opacity:1;transform:none}}
+
+/* 荣誉：关于区末尾的一条记录，不抢主叙事 */
+.honors{display:grid;grid-template-columns:170px minmax(0,1fr);gap:28px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line)}
+.honors-label{font:10px/1.6 var(--mono);letter-spacing:.15em;color:var(--ctp-mauve)}
+.honors ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.honors li{display:flex;align-items:baseline;gap:9px;font-size:12px;line-height:1.7;color:var(--ctp-subtext)}
+.honors b{font:10px/1.5 var(--mono);font-weight:500;color:var(--ctp-peach);white-space:nowrap}
+@media (max-width:900px){.honors{grid-template-columns:1fr;gap:12px}.honors ul{grid-template-columns:1fr;gap:8px}}

@@ -1,17 +1,11 @@
 import { OceanEngine } from './src/engine';
 
-type IdleWindow = Window & {
-  requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
-};
-
 const canvas = document.querySelector<HTMLCanvasElement>('#ocean');
 let started = false;
 
 function start() {
-  if (started || !canvas) return;
+  if (started || !canvas || !window.matchMedia('(min-width: 900px)').matches) return;
   started = true;
-  // The ocean is decorative. Start it on the first sign of interaction, or
-  // after the page has settled, so it never competes with first paint.
   new OceanEngine(canvas, [
     { kind: 'hammerhead', size: 1.25 },
     { kind: 'thresher', size: 1 },
@@ -21,34 +15,13 @@ function start() {
   document.documentElement.classList.add('ocean-ready');
 }
 
-function startWhenIdle() {
-  const idle = window as IdleWindow;
-  if (typeof idle.requestIdleCallback === 'function') {
-    idle.requestIdleCallback(start, { timeout: 1200 });
-  } else {
-    window.setTimeout(start, 300);
-  }
-}
-
-let intentTimer = 0;
-
-function startOnIntent() {
-  // Wait until the interaction settles; starting the engine mid-scroll would
-  // add a long task exactly when the page is busiest.
-  window.clearTimeout(intentTimer);
-  intentTimer = window.setTimeout(startWhenIdle, 900);
-}
-
-for (const type of ['pointerdown', 'keydown', 'touchstart'] as const) {
-  window.addEventListener(type, startOnIntent, { once: true, passive: true });
-}
-
-function armFallback() {
-  window.setTimeout(startWhenIdle, 3000);
+function schedule() {
+  // Decorative background: let the cover paint and settle first, then fade in.
+  window.setTimeout(start, 2500);
 }
 
 if (document.readyState === 'complete') {
-  armFallback();
+  schedule();
 } else {
-  window.addEventListener('load', armFallback, { once: true });
+  window.addEventListener('load', schedule, { once: true });
 }

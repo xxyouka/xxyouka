@@ -132,6 +132,9 @@ def check_css() -> None:
 
 
 def check_js_images() -> None:
+    for name in ("ocean.js", "pixel-preview.js"):
+        if not (SITE / name).exists():
+            problems.append(f"site/{name}: 文件不存在")
     js = SITE / "site.js"
     text = js.read_text(encoding="utf-8")
     for ref in sorted(set(re.findall(r"assets/[A-Za-z0-9._/-]+\.(?:webp|png|jpg|jpeg|svg|woff2)", text))):
