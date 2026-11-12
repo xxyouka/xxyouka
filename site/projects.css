@@ -1,0 +1,77 @@
+/* 全部项目 / Index — 只在本页加载，复用 site.css 的 token 与页头页脚 */
+.projects-page{background:var(--paper)}
+.index-main{width:min(1160px,calc(100% - 72px));margin:auto;padding:78px 0 30px}
+.index-hero{padding-bottom:38px;border-bottom:1px solid var(--line)}
+.index-hero .kicker{margin:0 0 20px}
+.index-hero h1{font-family:var(--display);font-weight:500;font-size:clamp(52px,7.6vw,96px);line-height:1.02;letter-spacing:-.055em;margin:0}
+.index-hero h1 span{display:block;font:10px/1.6 var(--mono);letter-spacing:.14em;color:var(--muted);margin-top:20px;text-transform:uppercase}
+.index-lede{max-width:620px;color:var(--ctp-subtext);font-size:14px;line-height:1.9;margin:24px 0 0}
+.index-meta{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:14px;margin-top:30px;font:9px var(--mono);letter-spacing:.12em;color:var(--muted);font-variant-numeric:tabular-nums}
+.index-jump{display:flex;flex-wrap:wrap;gap:10px 26px;padding:20px 0;border-bottom:1px solid var(--line)}
+.index-jump a{font:10px var(--mono);letter-spacing:.06em;color:var(--muted);display:inline-flex;gap:7px;align-items:baseline}
+.index-jump a:hover{color:var(--ctp-mauve)}
+.index-jump b{color:var(--ctp-peach);font-weight:500}
+.index-group{padding-top:56px;scroll-margin-top:110px}
+.index-group-head{display:flex;align-items:baseline;gap:18px;margin-bottom:14px}
+.index-group-head .kicker{margin:0}
+.index-group-head h2{font-family:var(--display);font-size:28px;font-weight:500;letter-spacing:-.03em;margin:0;line-height:1.3}
+.index-count{margin-left:auto;font:10px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.index-list{border-top:1px solid var(--line)}
+.index-item{display:grid;grid-template-columns:72px minmax(0,1fr) 178px;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.idx-year{font:10px var(--mono);letter-spacing:.06em;color:var(--muted);padding-top:5px;font-variant-numeric:tabular-nums}
+.idx-body{min-width:0}
+.idx-body h3{font-family:var(--display);font-weight:500;font-size:25px;line-height:1.3;letter-spacing:-.02em;margin:0;color:var(--ink)}
+.idx-body h3 small{font:8px var(--mono);letter-spacing:.14em;color:var(--muted);margin-left:9px;white-space:nowrap;vertical-align:middle}
+.idx-body p{font-size:12.5px;line-height:1.8;color:var(--ctp-subtext);margin:7px 0 0;max-width:62ch}
+.idx-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.idx-tags span{font:8px var(--mono);letter-spacing:.05em;color:var(--muted);border:1px solid var(--line);padding:4px 7px;border-radius:3px;line-height:1.3}
+.idx-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;padding-top:3px;text-align:right}
+.idx-status{font:8px var(--mono);letter-spacing:.11em;color:var(--muted);text-transform:uppercase}
+.idx-status.live{color:var(--ctp-teal)}
+.idx-status.public{color:var(--ctp-lavender)}
+.idx-status.award{color:var(--ctp-peach)}
+.idx-status.wip{color:var(--ctp-yellow)}
+.idx-status.private{color:var(--muted)}
+.idx-link{font:9px var(--mono);letter-spacing:.05em;color:var(--ctp-lavender);border-bottom:1px solid #585b70;padding-bottom:2px;white-space:nowrap}
+.idx-link:hover{color:var(--ctp-mauve);border-color:var(--ctp-mauve)}
+.lab-list{display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:18px}
+.lab-list span{font:10px var(--mono);color:var(--muted);border:1px solid var(--line);padding:7px 10px;border-radius:3px}
+.index-note{font:10px/1.8 var(--mono);color:var(--muted);margin:22px 0 0;max-width:68ch}
+.projects-page .foot{margin-top:24px}
+@media(max-width:900px){
+  .index-main{width:calc(100% - 48px);padding-top:58px}
+  .index-item{grid-template-columns:54px minmax(0,1fr);gap:16px}
+  .idx-side{grid-column:2;align-items:flex-start;text-align:left;flex-direction:row;gap:14px;padding-top:0}
+  .idx-body h3{font-size:23px}
+  .index-group-head h2{font-size:25px}
+}
+@media(max-width:600px){
+  .projects-page .top{height:74px;padding:0 20px}
+  .projects-page .logo{font-size:10px;gap:8px}
+  .projects-page .logo-mark{width:25px;height:25px;font-size:15px}
+  .projects-page .top-right{position:static;display:flex;background:none;border:0;box-shadow:none;padding:0;gap:14px;justify-content:flex-end}
+  .projects-page .top-right a{font-size:11px;min-height:0;padding:8px 0;display:inline-flex;align-items:center}
+  .projects-page .top-right a[href^="http"]{display:none}
+  .index-main{width:calc(100% - 40px);padding-top:44px}
+  .index-hero h1{font-size:clamp(46px,14vw,64px)}
+  .index-hero h1 span{font-size:8px;letter-spacing:.1em}
+  .index-lede{font-size:13px}
+  .index-jump{gap:8px;padding:16px 0}
+  .index-jump a{font-size:9px;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;justify-content:center;gap:6px}
+  .idx-link{min-height:32px;display:inline-flex;align-items:center}
+  .index-group{padding-top:44px}
+  .index-group-head{flex-wrap:wrap;gap:6px 12px}
+  .index-group-head .kicker{width:100%;margin-bottom:2px}
+  .index-group-head h2{font-size:24px}
+  .index-count{margin-left:auto}
+  .index-item{grid-template-columns:1fr;gap:7px;padding:20px 0}
+  .idx-year{font-size:9px;padding-top:0}
+  .idx-side{grid-column:1;flex-direction:row;flex-wrap:wrap;align-items:center;gap:12px}
+  .idx-body h3{font-size:24px}
+  .idx-body h3 small{display:block;margin:5px 0 0}
+  .idx-body p{font-size:12px}
+  .lab-list span{font-size:9px;padding:6px 8px}
+  .index-note{font-size:9px}
+  .projects-page .foot{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.projects-page .idx-link,.index-jump a{transition:none}}

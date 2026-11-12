@@ -101,3 +101,10 @@ dialog{scrollbar-gutter:stable}
 .honors li{display:flex;align-items:baseline;gap:9px;font-size:12px;line-height:1.7;color:var(--ctp-subtext)}
 .honors b{font:10px/1.5 var(--mono);font-weight:500;color:var(--ctp-peach);white-space:nowrap}
 @media (max-width:900px){.honors{grid-template-columns:1fr;gap:12px}.honors ul{grid-template-columns:1fr;gap:8px}}
+
+/* 全部项目索引入口 */
+.more-index{margin:18px 0 0;text-align:right;font:10px var(--mono);letter-spacing:.06em}
+.more-index a{color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:3px}
+.more-index a:hover{color:var(--ctp-mauve);border-color:var(--ctp-mauve)}
+.more-index span{color:var(--ctp-peach)}
+@media (max-width:700px){.more-index{text-align:left}}

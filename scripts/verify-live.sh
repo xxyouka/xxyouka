@@ -26,6 +26,7 @@ if ! grep -qi 'xxyouka' <<<"$html"; then
 fi
 
 check "$BASE/"
+check "$BASE/projects.html"
 check "$BASE/sitemap.xml"
 check "$BASE/robots.txt"
 check "$BASE/404.html"

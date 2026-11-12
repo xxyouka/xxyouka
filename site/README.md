@@ -1,6 +1,6 @@
 # xxyouka · 个人作品集
 
-入口 `index.html`。纯静态单页，没有构建步骤、没有框架、没有追踪脚本。线上：<https://xxyouka.github.io/>。
+入口 `index.html`。纯静态站点：首页 + 全部项目索引，没有构建步骤、没有框架、没有追踪脚本。线上：<https://xxyouka.github.io/>。
 
 > 2026-11-11 起源码并入 `xxyouka` 仓库的 `site/` 目录；部署仍发布到原仓库 `xxyouka/xxyouka.github.io` 的 `main` 分支。
 
@@ -8,8 +8,10 @@
 
 | 路径 | 内容 |
 | --- | --- |
-| `index.html` | 单页结构、项目卡、案例文案、元数据与 JSON-LD |
-| `site.css` | 视觉、响应式与弹窗；文件末尾是 2026-11-11 的优化层 |
+| `index.html` | 首页结构、项目卡、案例文案、元数据与 JSON-LD |
+| `projects.html` | 全部项目索引：26 个项目 / 实验，按方向分组 |
+| `projects.css` | 只给索引页使用的布局，复用 `site.css` 的 token |
+| `site.css` | 视觉、响应式与弹窗；文件末尾是 2026-11-12 的优化层 |
 | `site.js` | 筛选、案例弹窗、图库、分享、复制邮箱、键盘与历史记录 |
 | `pixel-preview.js` | 只在桌面悬停设备加载的像素预览与光斑 |
 | `ocean.js` | ASCII 海洋运行产物；源码在 `source/ocean/` |
@@ -40,6 +42,7 @@ Windows 仍可用 `start-preview.ps1`。页面没有构建步骤，改完刷新�
 - 项目卡片、首屏、关于、联系：`index.html`
 - 案例文案、图片列表、链接、证据数字：`site.js` 里的 `projects`、`caseMeta`、`caseNotes`
 - 视觉与手机排版：`site.css`；新增规则优先追加到末尾，避免翻改旧的层叠
+- 全部项目索引：`projects.html` 与 `projects.css`；新增项目直接加一条 `index-item`
 - 桌面悬停预览：`pixel-preview.js`，由 `site.js` 在 hover 设备上按需加载；改它时同步更新 `site.js` 里的 `?v=` 版本号
 - 图片与图标：`assets/`
 - 分享预览图：`assets/og-cover-20261102c.png`（1200×630，对应 `og:image`）
@@ -56,7 +59,7 @@ npx esbuild source/ocean/site-entry.ts \
   --outfile=ocean.js
 ```
 
-页面引用带版本号：`ocean.js?v=YYYYMMDD-vN`。改完 `ocean.js`、`site.css` 或 `site.js` 后，同步更新 `index.html` 里的版本号，避免返回用户拿到旧缓存。
+页面引用带版本号：`ocean.js?v=YYYYMMDD-vN`。改完 `ocean.js`、`site.css`、`site.js`、`pixel-preview.js` 或 `projects.css` 后，同步更新 `index.html` 与 `projects.html` 里的版本号，避免返回用户拿到旧缓存。
 
 ## 图片
 

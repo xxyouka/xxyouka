@@ -3,7 +3,7 @@
   <img src="assets/folio-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
-**导航**　[作品](#user-content-一些正在生长的作品)　/　[公开项目](#user-content-一些顺手做出来的工具)　/　[关于与工具](#user-content-工作台抽屉)
+**导航**　[全部项目](https://xxyouka.github.io/projects.html)　/　[作品](#user-content-一些正在生长的作品)　/　[公开项目](#user-content-一些顺手做出来的工具)　/　[关于与工具](#user-content-工作台抽屉)
 
 [完整作品集 ↗](https://xxyouka.github.io/)　·　[邮件联系 ↗](mailto:1420272691@qq.com)
 
@@ -43,7 +43,7 @@
 
 <sub>02 / AI 探索 · 个体检索</sub>
 
-从检测、特征提取到检索，探索如何区分外观相似的宠物个体。2026 年 11 月测试台记录的 199 张留出图 Top-1 为 84.4%（测试口径，非线上准确率）。
+从检测、特征提取到检索，探索如何区分外观相似的宠物个体。2026-11-12 全面优化后，3 折 624 条留出查询 Top-1 为 88.9% / Top-3 95.5%（测试口径，非线上准确率）。
 
 ### [一只猫的第九条命 ↗](https://jiutiaoming.pages.dev/)
 
@@ -67,6 +67,8 @@
 - **[弹幕音乐播放器](https://github.com/xxyouka/danmu-player)** — 把音乐、同步歌词与 B 站弹幕放在一起的桌面播放器。Electron · React · TypeScript
 - **[BitClock](https://github.com/xxyouka/BitClock)** — 用像素风界面记录和回顾电脑使用时间。Tauri · Svelte · Rust
 - **[Reticence](https://github.com/xxyouka/Reticence)**　·　**[天机阁](https://github.com/xxyouka/tianjige)** — 更多实验和作品。
+
+[查看全部 26 个项目 →](https://xxyouka.github.io/projects.html)
 
 ---
 

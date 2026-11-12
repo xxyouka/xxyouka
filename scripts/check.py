@@ -17,7 +17,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 PORTFOLIO = ROOT / "portfolio"
-PAGES = [SITE / "index.html", SITE / "404.html", PORTFOLIO / "index.html", PORTFOLIO / "404.html"]
+PAGES = [SITE / "index.html", SITE / "projects.html", SITE / "404.html", PORTFOLIO / "index.html", PORTFOLIO / "404.html"]
 DOCS = [ROOT / "README.md", ROOT / "仓库说明.md", ROOT / "GitHub主页.md",
         SITE / "README.md", SITE / "个人网站.md",
         PORTFOLIO / "README.md", PORTFOLIO / "作品集.md"]
@@ -120,7 +120,7 @@ def check_page(path: Path) -> None:
 
 
 def check_css() -> None:
-    for css in (SITE / "site.css",):
+    for css in (SITE / "site.css", SITE / "projects.css"):
         text = css.read_text(encoding="utf-8")
         for raw in re.findall(r"url\((['\"]?)([^)'\"]+)\1\)", text):
             ref = raw[1]
