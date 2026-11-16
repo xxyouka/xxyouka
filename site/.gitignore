@@ -1,6 +1,0 @@
-node_modules/
-.playwright-mcp/
-.venv/
-__pycache__/
-*.log
-.DS_Store

@@ -3,9 +3,9 @@
   <img src="assets/folio-20261102-light.svg" alt="xx · XXYOUKA — 数字产品、AI 与互动作品" width="100%">
 </picture>
 
-**导航**　[全部项目](https://xxyouka.github.io/projects.html)　/　[作品](#user-content-一些正在生长的作品)　/　[公开项目](#user-content-一些顺手做出来的工具)　/　[关于与工具](#user-content-工作台抽屉)
+**导航**　[作品](#user-content-一些正在生长的作品)　/　[公开项目](#user-content-一些顺手做出来的工具)　/　[关于与工具](#user-content-工作台抽屉)
 
-[完整作品集 ↗](https://xxyouka.github.io/)　·　[邮件联系 ↗](mailto:1420272691@qq.com)
+[邮件联系 ↗](mailto:1420272691@qq.com)
 
 ---
 
@@ -20,8 +20,8 @@
 <details>
 <summary>第一次来？从这里开始</summary>
 
-- 想看真实产品？看看 [校园猫猫的档案和设计](https://xxyouka.github.io/#project/cat)。
-- 对 AI 感兴趣？看看 [pet-id 如何识别猫咪个体](https://xxyouka.github.io/#project/pet)。
+- 想看真实产品？看看 [校园猫猫的档案和设计](#user-content-校园猫猫)。
+- 对 AI 感兴趣？看看 [pet-id 如何识别猫咪个体](#user-content-pet-id)。
 - 想先体验点什么？打开 [一只猫的第九条命](https://jiutiaoming.pages.dev/)。
 
 </details>
@@ -32,14 +32,14 @@
 
 ## 一些正在生长的作品。
 
-### [校园猫猫 ↗](https://xxyouka.github.io/#project/cat)
+### 校园猫猫
 
 <sub>01 / 数字产品 · 微信小程序</sub>
 
 让校园里的猫咪信息可以被记录、查找和持续维护。围绕个体档案连接相册、相遇记录与救助进展。  
 [公开代码：核心档案版](https://github.com/xxyouka/campus-cat-platform)
 
-### [pet-id ↗](https://xxyouka.github.io/#project/pet)
+### pet-id
 
 <sub>02 / AI 探索 · 个体检索</sub>
 
@@ -49,10 +49,9 @@
 
 <sub>03 / 互动创作 · H5</sub>
 
-以流浪猫的生命旅程为线索，通过四次选择走向不同结局，把分支叙事、插画和声音组合成可体验的作品。  
-[查看创作详情](https://xxyouka.github.io/#project/ninth)
+以流浪猫的生命旅程为线索，通过四次选择走向不同结局，把分支叙事、插画和声音组合成可体验的作品。
 
-### [双人食刻 ↗](https://xxyouka.github.io/#project/meal)
+### 双人食刻
 
 <sub>04 / 生活工具 · 微信小程序</sub>
 
@@ -67,8 +66,6 @@
 - **[弹幕音乐播放器](https://github.com/xxyouka/danmu-player)** — 把音乐、同步歌词与 B 站弹幕放在一起的桌面播放器。Electron · React · TypeScript
 - **[BitClock](https://github.com/xxyouka/BitClock)** — 用像素风界面记录和回顾电脑使用时间。Tauri · Svelte · Rust
 - **[Reticence](https://github.com/xxyouka/Reticence)**　·　**[天机阁](https://github.com/xxyouka/tianjige)** — 更多实验和作品。
-
-[查看全部 26 个项目 →](https://xxyouka.github.io/projects.html)
 
 ---
 
@@ -91,4 +88,4 @@
 
 ---
 
-<sub>ISSUE 01 · 2026　—　[作品集](https://xxyouka.github.io/)　·　[GitHub](https://github.com/xxyouka)　·　[邮箱](mailto:1420272691@qq.com)</sub>
+<sub>ISSUE 01 · 2026　—　[GitHub](https://github.com/xxyouka)　·　[邮箱](mailto:1420272691@qq.com)</sub>
